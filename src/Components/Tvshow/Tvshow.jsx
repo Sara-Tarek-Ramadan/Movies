@@ -13,7 +13,9 @@ export default function Movies() {
   useEffect(()=>{
     getApiTrending(1)
   },[])
+  
   return <>
+  
     <div className='row'>
         {tv.map((item , index)=>
             <div key={index} className='col-md-3 my-3'>
